@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Roboto:wght@100&display=swap');
+
+/* BODY CONTENT */
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+* {
+    font-family: 'Noto+Sans', sans-serif;
+    text-decoration: none;
+    color: #2f2a29;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER CONTENT */
+
+.header {
+    background: rgb(230,182,70);
+    background: linear-gradient(90deg, rgba(230,182,70,1) 0%, rgba(218,148,31,1) 100%); 
+    height: 150 px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.imagenLogo {
+    width: 260px;
+    padding: 0px 20px;
+    /* border: black 1px solid; */
+}
+
+.headerLinks {
+    height: 40px;
+    width: 800px;
+    padding: 0px 20px;
+}
+
+.headerLinks ul {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    list-style-type: none;
+    color: black;
+    /* border: 1px black solid; */
+}
+
+.headerSingleLink {
+    color: #2f2a29;
+    opacity: 0.5;
+}
+
+.headerSingleLink:hover {
+    opacity: 1;
+}
+
+/* MAIN CONTENT */
+
+main {
+    background-color: #eeeded;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex: row;
+    }
+
+    .homeTexto {
+        order: 2;
+        padding: 0px 20px;
+    }
+
+    .homeImagen {
+        order: 1;
+        padding: 0px 20px;
+    }
+
+
+/* FOOTER CONTENT */
+
+.footer {
+    background: none
+}
+
+footer {
+    background: none;
+    background: linear-gradient(90deg, rgba(230,182,70,1) 0%, rgba(218,148,31,1) 100%); 
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagenLogoFooter {
+    height: 50px;
+    padding: 0px 20px;
+}
+
+.redesFooter {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+
+.imagenRedesFooter {
+    height: 20px;
+}
+
+.imagenRedesFooter:hover {
+    transform: scale(1.5);
+}
