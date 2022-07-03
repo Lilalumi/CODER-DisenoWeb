@@ -31,7 +31,6 @@ body {
 .imagenLogo {
     width: 260px;
     padding: 0px 20px;
-    /* border: black 1px solid; */
 }
 
 .headerLinks {
@@ -48,7 +47,6 @@ body {
     font-weight: bold;
     list-style-type: none;
     color: black;
-    /* border: 1px black solid; */
 }
 
 .headerSingleLink {
@@ -79,14 +77,12 @@ main {
 .homeTexto {
         order: 2;
         padding: 0px 20px;
-        border: #2f2a29 1px solid;
         width: 45%;
     }
 
 .homeImagen {
         order: 1;
         padding: 0px 20px;
-        border: #2f2a29 1px solid;
         display: flex;
         align-items: flex-start;
         width: 45%;
