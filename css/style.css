@@ -52,6 +52,7 @@ body {
 .headerSingleLink {
     color: #2f2a29;
     opacity: 0.5;
+    transition: 0.3s;
 }
 
 .headerSingleLink:hover {
@@ -72,6 +73,7 @@ main {
     display: flex;
     flex: row;
     justify-content: space-between;
+    font-size: 1.5rem;
     }
 
 .homeTexto {
@@ -95,6 +97,44 @@ main {
 
 .homeContenido {
     padding: 10px;
+}
+
+/* MAIN CONTENT - CLASES */
+
+.mainClases {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainClasesContent {
+    width: 70%;
+    margin: 10px;
+}
+
+.mainClasesLista {
+    display: flex;
+    list-style-type: none
+}
+
+.mainClasesListaItems {
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #cac9c9;
+    opacity: 0.5;
+}
+
+.mainClasesListaItems:hover {
+    opacity: 1;
+    border-radius: 20px;
+    width: 35%;
 }
 
 /* FOOTER CONTENT */
@@ -121,6 +161,7 @@ footer {
 
 .imagenRedesFooter {
     height: 20px;
+    transition: 0.3s;
 }
 
 .imagenRedesFooter:hover {
