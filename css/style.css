@@ -3,10 +3,9 @@
 /* BODY CONTENT */
 
 body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 120px auto 80px;
     height: 100vh;
-    margin: 0;
 }
 
 * {
@@ -22,7 +21,6 @@ body {
 .header {
     background: rgb(230,182,70);
     background: linear-gradient(90deg, rgba(230,182,70,1) 0%, rgba(218,148,31,1) 100%); 
-    height: 150 px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -61,18 +59,26 @@ body {
 
 /* MAIN CONTENT */
 
-/* MAIN CONTENT - HOME */
-
 main {
     background-image: url(../img/homeBackground.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
+    background-size: contain;
     display: flex;
-    height: 100%;
-    flex: row;
-    justify-content: space-between;
-    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 50px;
+    }
+
+
+/* MAIN CONTENT - HOME */
+
+.mainHome {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 80%;
     }
 
 .homeTexto {
@@ -98,9 +104,117 @@ main {
     padding: 10px;
 }
 
+.homeContenido img {
+    width: 50px;
+}
+
+/* MAIN CONTENT - QUIENES SOMOS */
+
+.mainQuienes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    }
+
+.mainQuienesContent {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding: 40px;
+}
+
+.mainQuienesContent div {
+    width: 50%;
+}
+
+.mainQuienesContent img {
+    object-fit: contain;
+    width: 50%;
+    padding: 0px 30px;
+}
+
+.mainQuienesContent div {
+    order: 2;
+}
+
+.mainQuienesContent div p {
+    padding: 10px 0px;
+}
+
+.mainQuienesContent img {
+    order: 3;
+}
+
+.mainQuienesContent iframe {
+    order: 1;
+    object-fit: contain;
+    width: 50%;
+    padding: 0px 30px;
+}
+
+/* MAIN CONTENT - CURSOS */
+
+.mainCursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.mainCursosTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 22px;
+}
+
+.mainCursosTitulo h2 {
+    padding-bottom: 22px;
+}
+
+.mainCursosLista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 80%;
+}
+
+.mainCursosItems{
+    display: flex;
+    align-items: flex-start;
+    padding: 22px 0px;
+    width: 100%;
+}
+
+.mainCursosItems img {
+    width: 50%;
+}
+
+.imagenPrt {
+    order: -2;
+}
+
+.mainCursosIdiomas {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 22px;
+    order: 0;
+}
+
+.mainCursosIdiomas h4 {
+    padding-bottom: 20px;
+}
+
 /* MAIN CONTENT - CLASES */
 
 .mainClases {
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -120,6 +234,7 @@ main {
     border-radius: 15px;
     padding: 20px;
     margin: 10px;
+    height: 300px;
     width: 30%;
     transition: 0.3s;
     display: flex;
@@ -136,41 +251,88 @@ main {
     width: 35%;
 }
 
-/* MAIN CONTENT - QUIENES SOMOS */
+/* MAIN CONTENT - TRADUCCIONES */
 
-.mainQuienes {
+.mainTraducciones {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 0px 100px;
-    margin: 0px 100px;
+    justify-content: space-between;
+    width: 80%;
 }
 
-.mainQuienesContent {
+.mainTraducciones p {
+    padding: 22px 0px;
+}
+
+.mainTraducciones img {
+    width: 50%;
+    padding: 22px 0px;
+}
+
+/* MAIN CONTENT - CONTACTO */
+
+.mainContacto {
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.mainContacto img {
     width: 70%;
 }
 
-.mainQuienesContent div {
+.mainContactoForm {
     width: 50%;
+    padding-right: 22px;
 }
 
-.mainQuienesContent img {
-    object-fit: contain;
-    width: 50%;
+.mainContactoForm form {
+    /* background-color: #cac9c9; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
 }
 
+.mainContactoForm h2 {
+    padding-bottom: 22px;
+}
+
+.mainContactoFormBg {
+    background-color: rgba(202, 201, 201, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.mainContactoForm form input {
+    margin-bottom: 22px;
+    height: 1.5rem;
+}
+
+.mainContactoForm form label {
+    padding-bottom: 10px;
+}
+
+.mainContactButton {
+    font-family: 'Noto+Sans', sans-serif;
+    font-size: 1.3rem;
+    background-color:#cac9c9;
+    color: #2f2a29;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
 /* FOOTER CONTENT */
 
 footer {
     background: linear-gradient(90deg, rgba(230,182,70,1) 0%, rgba(218,148,31,1) 100%); 
-    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0px;
 }
 
 .imagenLogoFooter {

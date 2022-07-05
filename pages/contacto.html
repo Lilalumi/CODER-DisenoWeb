@@ -10,8 +10,10 @@
 <body>
     <!-- fila de logo + nav --> 
 	<header class="header">
-		<img src="../img/logo.png" alt="destrabalenguas logo" class="imagenLogo">
-		<section class="headerLinks">
+		<a href="../index.html" class="imagenLogo">
+			<img src="../img/logo.png" alt="destrabalenguas logo" class="imagenLogo">
+		</a>
+		<div class="headerLinks">
 			<ul>
 				<li><a href="../index.html" class="headerSingleLink">HOME</a></li>
 				<li><a href="quienes_somos.html" class="headerSingleLink">QUIENES SOMOS</a></li>
@@ -20,32 +22,34 @@
 				<li><a href="traducciones.html" class="headerSingleLink">TRADUCCCIONES</a></li>
 				<li><a href="contacto.html" class="headerSingleLink">CONTACTO</a></li>
 			</ul>
-		</section>
+		</div>
 	</header>
+
 	<!-- inicio de la informacion de este sitio --> 
 	<main>
-        <section>
-		<h2>Contacto</h2>
-		<br>
-		<form>
-            <fieldset>
-                <legend>Formulario de contacto</legend>
-            <label for="nombre">Nombre</label>
-            <input id="nombre" type="text">
-            <br>
-            <label for="apellido">Apellido</label>
-            <input id="apellido" type="text">
-            <br>
-            <label for="email">Email</label>
-            <input id="email" type="email">
-            <br>
-            <br>
-            <input type="submit">
-            <input type="reset">
-            </fieldset>
-        </form>
-		</section>
+        <div class="mainContacto">
+			<div class="mainContactoForm">
+				<h2>Contacto</h2>
+						
+				<div class="mainContactoFormBg">
+					<form>
+						<label for="nombre">Nombre</label>
+						<input id="nombre" type="text">
+						<br>
+						<label for="apellido">Apellido</label>
+						<input id="apellido" type="text">
+						<br>
+						<label for="email">Email</label>
+						<input id="email" type="email">
+						
+					</form>
+				</div>
+				<input type="submit" class="mainContactButton">
+			</div>
+			<img src="../img/contacto.png" alt="contacto">
+		</div>
     </main>
+	
 	<!-- inicio de footer --> 
 	<footer class="footer">
 		<img src="../img/logo.png" alt="destrabalenguas logo" class="imagenLogoFooter">
