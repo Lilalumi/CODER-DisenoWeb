@@ -14,12 +14,12 @@ body {
     color: #2f2a29;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* HEADER CONTENT */
 
 .header {
-    background: rgb(230,182,70);
     background: linear-gradient(90deg, rgba(230,182,70,1) 0%, rgba(218,148,31,1) 100%); 
     display: flex;
     justify-content: space-between;
@@ -56,6 +56,7 @@ body {
 .headerSingleLink:hover {
     opacity: 1;
 }
+
 
 /* MAIN CONTENT */
 
@@ -325,6 +326,7 @@ main {
     margin-top: 10px;
     border-radius: 10px;
 }
+
 /* FOOTER CONTENT */
 
 footer {
@@ -341,7 +343,7 @@ footer {
 }
 
 .redesFooter {
-    width: 100px;
+    width: 120px;
     display: flex;
     justify-content: space-around;
     padding: 0px 20px;
@@ -354,4 +356,161 @@ footer {
 
 .imagenRedesFooter:hover {
     transform: scale(1.5);
+}
+
+/* MEDIA QUERIE MIN 1060px */
+
+
+@media screen and (max-width: 1060px) {
+    
+    body {
+        grid-template-rows: 170px auto 80px;
+    }
+
+    .header {
+        align-items: flex-start;
+        justify-content:space-between;
+    }
+    
+    .imagenLogo {
+        max-height: 150px;
+        width: auto;
+        padding: 10px;
+    }
+
+    .headerLinks {
+        padding: 5px;
+        align-items:center;
+        width: auto;
+        height: 100%;
+    }
+
+    .headerLinks ul {
+        flex-direction: column;
+        justify-content:space-between;
+        height: 100%;
+    }
+
+    .headerSingleLink {
+        padding: 10px;
+    }
+
+    /* MAIN CONTENT */
+
+    main {
+        padding: 5px;
+    }
+
+    /* MAIN CONTENT - HOME */
+
+    .mainHome {
+        width: 100%;
+    }
+
+    .homeTexto {
+        padding: 10px 0px;
+        width: auto;
+    }
+
+    .homeImagen {
+        padding: 10px 0px;
+        width: auto;
+        min-width: auto;
+    }
+
+    /* MAIN CONTENT - QUIENES SOMOS */
+
+    .mainQuienes {
+        width: auto;
+    }
+}
+
+
+/* MEDIA QUERIE MIN 576px */
+
+
+@media screen and (max-width: 768px) {
+    
+    /* HEADER */
+
+    body {
+        grid-template-rows: 265px auto 80px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:flex-start;
+    }
+    
+    .imagenLogo {
+        padding: 0px 6px;
+        max-height: 120px;
+    }
+
+    .headerLinks {
+        padding: 0px 0px 10px 10px;
+        align-items:center;
+        width: auto;
+    }
+
+    .headerLinks ul {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+
+    /* MAIN CONTENT */
+
+    main {
+        background-size: auto cover;
+        background-position: 50%;
+        padding: 0px;
+    }
+    
+    /* MAIN CONTENT - HOME */
+
+    .mainHome {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .homeTexto {
+        padding: 10px 0px;
+        width: auto;
+        order: 1;
+    }
+
+    .homeImagen {
+        padding: 10px 0px;
+        width: 70%;
+        order: 2;
+    }
+
+    /* MAIN CONTENT - QUIENES SOMOS */
+
+    .mainQuienes {
+        width: auto;
+    }
+
+    .mainQuienesContent {
+        padding: 20px 10px;
+        flex-direction: column;
+    }
+
+    .mainQuienesContent div {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .mainQuienesContent img {
+        width: 100%;
+    }
+
+    .mainQuienesContent iframe {
+        width: 100%;
+        order: 3;
+        padding: 0px 10px;
+    }
 }
