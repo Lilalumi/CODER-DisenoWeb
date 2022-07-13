@@ -4,8 +4,12 @@
 
 body {
     display: grid;
-    grid-template-rows: 120px auto 80px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
     height: 100vh;
+    box-sizing: border-box;
 }
 
 * {
@@ -14,10 +18,14 @@ body {
     color: #2f2a29;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* HEADER CONTENT */
+
+header {
+    grid-area: header;
+    height: 110px;
+}
 
 .header {
     background: linear-gradient(90deg, rgba(230,182,70,1) 0%, rgba(218,148,31,1) 100%); 
@@ -61,6 +69,8 @@ body {
 /* MAIN CONTENT */
 
 main {
+    grid-area: main;
+    height: 100%;
     background-image: url(../img/homeBackground.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -69,7 +79,6 @@ main {
     flex-direction: column;
     align-items: center;
     font-size: 1.3rem;
-    padding: 50px;
     }
 
 
@@ -235,7 +244,7 @@ main {
     border-radius: 15px;
     padding: 20px;
     margin: 10px;
-    height: 300px;
+    height: auto;
     width: 30%;
     transition: 0.3s;
     display: flex;
@@ -331,10 +340,12 @@ main {
 
 footer {
     background: linear-gradient(90deg, rgba(230,182,70,1) 0%, rgba(218,148,31,1) 100%); 
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
+    grid-area: footer;
 }
 
 .imagenLogoFooter {
@@ -367,6 +378,10 @@ footer {
         grid-template-rows: 170px auto 80px;
     }
 
+    header {
+        height: 180px;
+    }
+
     .header {
         align-items: flex-start;
         justify-content:space-between;
@@ -391,20 +406,27 @@ footer {
         height: 100%;
     }
 
+    .headerLinks ul li {
+        padding-top: 1px;
+    }
+
     .headerSingleLink {
-        padding: 10px;
+        padding: 0px;
     }
 
     /* MAIN CONTENT */
 
     main {
-        padding: 5px;
+        background-size: contain;
     }
+
+
 
     /* MAIN CONTENT - HOME */
 
     .mainHome {
         width: 100%;
+        padding-top: 20px;
     }
 
     .homeTexto {
@@ -422,7 +444,64 @@ footer {
 
     .mainQuienes {
         width: auto;
+        align-items: center;
     }
+
+    /* MAIN CONTENT - CURSOS */
+
+    .mainCursos {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .mainCursosLista {
+        width: 100%; 
+    }
+
+    .mainCursosItems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainCursosItems img {
+        max-width: 300px;
+        width: 80%;
+        padding: 20px 0px;
+    }
+
+    .imagenPrt {
+        order: 2;
+    }
+
+    /* MAIN CONTENT - CLASES */
+
+    .mainClases {
+        width: 95%;
+        padding-top: 20px;
+    }
+
+    /* MAIN CONTENT - TRADUCCIONES */
+
+    .mainTraducciones {
+        padding-top: 20px;
+    }
+
+    /* MAIN CONTENT - CONTACTO */
+
+    .mainContacto {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .mainContactoForm {
+        max-width: 500px;
+        padding-right: 0px;
+    }
+
+    .mainContacto img {
+        padding-left: 10px;
+    }
+
 }
 
 
@@ -432,6 +511,10 @@ footer {
 @media screen and (max-width: 768px) {
     
     /* HEADER */
+
+    header {
+        height: 275px;
+    }
 
     body {
         grid-template-rows: 265px auto 80px;
@@ -466,6 +549,7 @@ footer {
         background-size: auto cover;
         background-position: 50%;
         padding: 0px;
+        font-size: 1rem;
     }
     
     /* MAIN CONTENT - HOME */
@@ -474,6 +558,7 @@ footer {
         flex-direction: column;
         align-items: center;
         width: auto;
+        padding-top: 20px;
     }
 
     .homeTexto {
@@ -497,11 +582,15 @@ footer {
     .mainQuienesContent {
         padding: 20px 10px;
         flex-direction: column;
+        align-items: center;
     }
 
     .mainQuienesContent div {
         width: 100%;
         padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .mainQuienesContent img {
@@ -513,4 +602,82 @@ footer {
         order: 3;
         padding: 0px 10px;
     }
+
+    /* MAIN CONTENT - CURSOS */
+
+    .mainCursos {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    /* MAIN CONTENT - CLASES */
+
+    .mainClases {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .mainClasesContent {
+        width: 100%;
+        margin: 0px;
+        padding: 10px 0px;
+        flex-direction: column;
+    }
+
+    .mainClasesLista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainClasesListaItems {
+        width: 100%;
+        opacity: 1;
+        margin: 10px;
+    }
+
+    .mainClasesListaItems li h4 {
+        padding-bottom: 10px;
+    }
+
+    .mainClasesListaItems:hover {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    /* MAIN CONTENT - TRADUCCIONES */
+
+    .mainTraducciones {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .mainTraducciones img {
+        width: 100%;
+    }
+
+    /* MAIN CONTENT - CONTACTO */
+
+    .mainContacto {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    .mainContacto img {
+        padding-top: 22px;
+        width: 100%;
+    }
+
+    .mainContactoForm {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .mainContactoForm h2 {
+        text-align: center;
+    }
+    .mainContacto {
+        width: 90%;
+    }
+
 }
