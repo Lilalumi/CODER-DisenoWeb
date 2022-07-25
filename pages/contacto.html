@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="img/mini.png">
+	<link rel="icon" href="../img/mini.png">
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
 	<!-- CSS only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -51,26 +51,37 @@
 	
 
 	<!-- MAIN CONTENT -->
-	<main>
-        <div class="mainContacto">
-			<div class="mainContactoForm">
-				<h2>Contacto</h2>
-						
-				<div class="mainContactoFormBg">
+	<main class="h-100 d-flex justify-content-center bg-warning">
+        <div class="d-flex flex-row align-items-center justify-content-center bg-light h-auto d-inline-block w-75 border border-3 rounded rounded-4 m-4">
+
+			<div class="row justify-content-center align-items-center p-4">
+				<div class="col-xl-4 col-md-8 col-10">
+					<h2 class="pt-4">Contacto</h2>
+					
 					<form>
-						<label for="nombre">Nombre</label>
-						<input id="nombre" type="text" placeholder="El nombre por el que queres que te llamemos">
-						<br>
-						<label for="apellido">Apellido</label>
-						<input id="apellido" type="text" placeholder="Aca va tu apellido">
-						<br>
-						<label for="email">Email</label>
-						<input id="email" type="email" placeholder="A este email te vamos a contactar">
+						<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label">Email</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						<div id="emailHelp" class="form-text">No compartiremos tu  email con nadie más</div>
+						</div>
+						<div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label">Nombre</label>
+						<input type="password" class="form-control" id="exampleInputPassword1">
+						</div>
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label">Motivo de consulta</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Aclaranos el motivo de tu consulta">
+							</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
 					</form>
+					
 				</div>
-				<input type="submit" class="mainContactButton">
+
+				<div class="col-xl-8 p-3">
+					<img src="../img/contacto.png" alt="contacto" class="d-flex flex-column align-items-center justify-content-center img-fluid">
+				</div>
 			</div>
-			<img src="../img/contacto.png" alt="contacto">
+
 		</div>
     </main>
 	
