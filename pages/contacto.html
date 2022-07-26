@@ -24,24 +24,22 @@
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-				  <li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+				<ul class="navbar-nav px-3">
+				  <li class="nav-item px-3">
+					<a class="nav-link active fs-5" aria-current="page" href="../index.html">Home</a>
 				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="quienes_somos.html">Quienes somos</a>
+				  <li class="nav-item px-3">
+					<a class="nav-link fs-5" href="quienes_somos.html">Quienes somos</a>
 				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="cursos.html">Cursos</a>
+				 
+				  <li class="nav-item px-3">
+					<a class="nav-link fs-5" href="clases.html">Clases e Idiomas</a>
 				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="clases.html">Clases</a>
+				  <li class="nav-item px-3">
+					<a class="nav-link fs-5" href="traducciones.html">Traducciones</a>
 				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="traducciones.html">Traducciones</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="contacto.html">Contacto</a>
+				  <li class="nav-item px-3">
+					<a class="nav-link fs-5" href="contacto.html">Contacto</a>
 				  </li>
 				</ul>
 			  </div>
@@ -51,11 +49,11 @@
 	
 
 	<!-- MAIN CONTENT -->
-	<main class="h-100 d-flex justify-content-center bg-warning">
+	<main class="min-vh-100 d-flex justify-content-center bg-warning">
         <div class="d-flex flex-row align-items-center justify-content-center bg-light h-auto d-inline-block w-75 border border-3 rounded rounded-4 m-4">
 
-			<div class="row justify-content-center align-items-center p-4">
-				<div class="col-xl-4 col-md-8 col-10">
+			<div class="d-flex flex-column justify-content-center align-items-center">
+				<div class="col-xl-6 col-md-8 col-10">
 					<h2 class="pt-4">Contacto</h2>
 					
 					<form>
@@ -72,17 +70,41 @@
 							<label for="exampleInputPassword1" class="form-label">Motivo de consulta</label>
 							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Aclaranos el motivo de tu consulta">
 							</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								Enviar
+							</button>
+						
 					</form>
 					
 				</div>
 
-				<div class="col-xl-8 p-3">
+				<div class="col-xl-8 pt-4">
 					<img src="../img/contacto.png" alt="contacto" class="d-flex flex-column align-items-center justify-content-center img-fluid">
 				</div>
 			</div>
 
 		</div>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Envio exitoso</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+				¡Gracias por tu consulta!
+				En breve nos estaremos comunicando.
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar	</button>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+
     </main>
 	
 	<!-- FOOTER CONTENT --> 
