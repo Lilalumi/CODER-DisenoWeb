@@ -1,0 +1,14 @@
+header {
+    nav {
+        background-color: $colorGrisDos;
+        li {
+            transition: 0.3s;
+
+            &:hover {
+                background-color: $colorAmarilloUno;
+                border-radius: 8px;
+                transform: translate(0, -5px);
+            }
+        }
+    }
+}

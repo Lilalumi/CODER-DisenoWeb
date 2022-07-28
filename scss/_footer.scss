@@ -1,0 +1,16 @@
+footer {
+    background-color: $colorGrisDos;
+    
+    div {
+
+        img {
+            transition: 0.3s;
+
+            &:hover {
+                background-color: $colorAmarilloUno;
+                border-radius: 8px;
+                margin: 0px 5px;
+            }
+        }
+    }
+}
