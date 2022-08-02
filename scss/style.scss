@@ -1,0 +1,13 @@
+@import "fuentes";
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+
+* {
+    font-family: 'Noto+Sans', sans-serif;
+    text-decoration: none;
+    color: $colorNegroUno;
+}
+
+

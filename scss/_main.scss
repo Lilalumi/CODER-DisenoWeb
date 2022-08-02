@@ -1,0 +1,28 @@
+main {
+    background-color: $colorAmarilloUno;
+
+    .mainBox {
+        background-color: $colorGrisDos;
+    }
+
+    .card {
+        transition: 0.3s;
+        &:hover {
+            background-color: $colorGrisUno;
+            border-radius: 15px;
+        }
+    }
+
+    .form-text {
+        font-style: italic;
+    }
+    
+    .form-control {
+        transition: 0.3s;
+        
+        &:focus {
+            background-color: $colorGrisUno;
+        }
+    }
+        
+}
