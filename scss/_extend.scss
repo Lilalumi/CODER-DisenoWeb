@@ -1,0 +1,12 @@
+// Extend
+
+.headerPrimario {
+    text-transform: uppercase;
+    background-color: $colorAmarilloUno;
+    border-radius: 15px;
+}
+
+.headerSecundario {
+    @extend .headerPrimario;
+    color: $colorGrisDos;
+}

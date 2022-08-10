@@ -1,0 +1,24 @@
+// MIXIN
+
+// SIN PARAMETROS
+
+@mixin parrafos {
+    font-style: oblique;
+    font-size: 1.2rem;
+    color: $colorGrisUno;    
+}
+
+.parrafosConEstilo {
+    @include parrafos;
+}
+
+// CON PARAMETROS
+
+@mixin textoConParametros ($size, $alineacion) {
+    font-size: $size;
+    text-align: $alineacion;
+}
+
+.textoConParameters {
+    @include textoConParametros(12px, center)
+}

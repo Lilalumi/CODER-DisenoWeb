@@ -27,11 +27,42 @@ main {
 footer {
   background-color: #EEEDED; }
   footer div img {
-    transition: 0.3s; }
+    transition: 0.3s;
+    border-radius: 20px; }
     footer div img:hover {
       background-color: #E6B646;
       border-radius: 8px;
       margin: 0px 5px; }
+
+.facebook {
+  background-color: #3b5998; }
+
+.linkedin {
+  background-color: #0e76a8; }
+
+.instagram {
+  background-color: #E1306C; }
+
+.copyright {
+  color: #343232;
+  font-size: 10px; }
+
+.headerPrimario, .headerSecundario {
+  text-transform: uppercase;
+  background-color: #E6B646;
+  border-radius: 15px; }
+
+.headerSecundario {
+  color: #EEEDED; }
+
+.parrafosConEstilo {
+  font-style: oblique;
+  font-size: 1.2rem;
+  color: #CAC9C9; }
+
+.textoConParameters {
+  font-size: 12px;
+  text-align: center; }
 
 * {
   font-family: 'Noto+Sans', sans-serif;

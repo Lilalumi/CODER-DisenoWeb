@@ -1,0 +1,6 @@
+Se realizaron los siguientes cambios para el desafios de SASS II
+-Se creo e importo _maps.scss. Ahi se crearon clases que se aplicaron en el footer solo del index.html
+-Se creo e importo _extend.scss. Ahi se crearon clases que se aplicaron en el texto solo del header de index.html
+-Se creo e importo _mixin.scss. Ahi se crearon clases que se aplicaron en el texto de Nivel de pages/clases.html
+-Para cumplir con el SEO, se agrego meta="description" a todas las paginas.
+-Se rejerarquizo todos los H (headlines) del sitio web.
