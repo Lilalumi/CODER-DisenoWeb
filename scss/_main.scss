@@ -7,6 +7,7 @@ main {
 
     .card {
         transition: 0.3s;
+
         &:hover {
             background-color: $colorGrisUno;
             border-radius: 15px;
@@ -16,13 +17,13 @@ main {
     .form-text {
         font-style: italic;
     }
-    
+
     .form-control {
         transition: 0.3s;
-        
+
         &:focus {
             background-color: $colorGrisUno;
         }
     }
-        
+
 }
